@@ -50,96 +50,19 @@ the administrator guide or the Release-Notes please see:
    guide goes through the configuration_ of the data-center and the setup of 
    the network_, storage_ and hypervisors_.
 
-.. toctree::
 
-.. _choices:
-
-
-Choosing a Deployment Architecture
-----------------------------------
 .. toctree::
    :maxdepth: 2
 
    choosing_deployment_architecture
-
-.. _guide:
-
-
-Quick Installation Guide
-------------------------
-.. toctree::
-   :maxdepth: 2
-
    qig
-
-
-.. _steps:
-
-Source Installation
--------------------
-.. toctree::
-   :maxdepth: 2
-
    building_from_source
-
-
-.. _installation:
-
-General Installation
---------------------
-.. toctree::
-   :maxdepth: 2
-
    overview/index
    management-server/index
-
-
-.. _configuration:
-
-Configuration
--------------
-.. toctree::
-   :maxdepth: 2
-
    configuration
-
-
-.. _hypervisors:
-
-Hypervisor Setup
-----------------
-.. toctree::
-   :maxdepth: 2
-   :glob:
-
    hypervisor/*
-
-.. _network:
-
-
-Network Setup
--------------
-.. toctree::
-   :maxdepth: 2
-
    network_setup
-
-.. _storage:
-
-
-Storage Setup
--------------
-.. toctree::
-   :maxdepth: 2
-
    storage_setup
-
-
-Optional Installation 
----------------------
-.. toctree::
-   :maxdepth: 2
-
    optional_installation
    encryption
 
