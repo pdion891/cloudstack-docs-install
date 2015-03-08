@@ -16,7 +16,7 @@
 
 import sys
 import os
-import sphinx_bootstrap_theme
+#import sphinx_bootstrap_theme
 
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
