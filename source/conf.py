@@ -16,6 +16,8 @@
 
 import sys
 import os
+
+sys.path.insert(0, os.path.abspath('./_themes/'))
 import sphinx_bootstrap_theme
 
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
