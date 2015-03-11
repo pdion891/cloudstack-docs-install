@@ -17,7 +17,7 @@
 import sys
 import os
 
-#sys.path.insert(0, os.path.abspath('_themes/sphinx-bootstrap-theme/'))
+sys.path.insert(0, os.path.abspath("./_themes/sphinx-bootstrap-theme/"))
 #import sphinx_bootstrap_theme
 import sphinx_bootstrap_theme
 
