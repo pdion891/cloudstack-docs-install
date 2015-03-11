@@ -19,6 +19,7 @@ import os
 
 #sys.path.insert(0, os.path.abspath('_themes/sphinx-bootstrap-theme/'))
 #import sphinx_bootstrap_theme
+import sphinx_bootstrap_theme
 
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
@@ -109,10 +110,10 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-
-html_theme = 'bootstrap'
-#html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
-html_theme_path = [ "./_themes/" ] + sphinx_bootstrap_theme.get_html_theme_path()
+if "html_theme_path" in globals():
+    html_theme_path += sphinx_bootstrap_theme.get_html_theme_path()
+else:
+    html_theme_path = ["./_themes/"] + sphinx_bootstrap_theme.get_html_theme_path()
 
 #    html_theme = 'default'
 #    if not on_rtd:
