@@ -111,7 +111,11 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 sys.path.append(os.path.abspath('_themes'))
 html_theme = 'bootstrap'
-html_theme_path = ['_themes']
+if "html_theme_path" in globals():
+    html_theme_path += sphinx_bootstrap_theme.get_html_theme_path()
+else:
+    html_theme_path = ["./_themes/"] + sphinx_bootstrap_theme.get_html_theme_path()
+    
 #html_theme = 'bootstrap'
 #html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 #if "html_theme_path" in globals():
